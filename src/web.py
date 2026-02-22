@@ -149,4 +149,4 @@ class Server:
 
     def run(self, host: str, port: int):
         """Runs server as a flask application"""
-        app.run(host, port)
+        socketio.run(host, port)
