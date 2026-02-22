@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling", "flask"]
+build-backend = "hatchling.build"
+
+[project]
+name = "twentylang"  # Уникальное имя для PyPI
+version = "0.0.1"
+authors = [
+  { name="Lev", email="lev.reimarov@google.com" },
+]
+description = "Fast and easy way to prototype languages"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/levr-code/twentylang"
+Issues = "https://github.com/levr-code/twentylang/issues"
