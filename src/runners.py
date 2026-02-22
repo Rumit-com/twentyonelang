@@ -96,7 +96,7 @@ class BaseRunner:
         try:
             float(val)
             return True
-        except TypeError:
+        except (TypeError, ValueError):
             return False
 
     @staticmethod
@@ -113,7 +113,7 @@ class BaseRunner:
         try:
             int(val, 16)
             return True
-        except TypeError:
+        except (TypeError, ValueError):
             return False
 
     def to_type(self, s: str):
