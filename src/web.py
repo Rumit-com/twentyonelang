@@ -104,5 +104,5 @@ class Server:
             return True
 
     def run(self, host: str, port: int):
-        """Runs server as a flask-socketio application"""
-        socketio.run(app, host=host, port=port)
+        """Runs server as a flask application"""
+        socketio.run(host, port)
